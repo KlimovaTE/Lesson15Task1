@@ -1,4 +1,4 @@
-public class Ticket implements Comparable<Ticket>{
+public class Ticket implements Comparable<Ticket> {
     protected int id;
     protected int price;
     protected String departure;
