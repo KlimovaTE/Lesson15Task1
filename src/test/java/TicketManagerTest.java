@@ -12,7 +12,7 @@ public class TicketManagerTest {
     Ticket item4 = new Ticket(4, 8000, "KUF", "SVO", 95);
     Ticket item5 = new Ticket(5, 15000, "MUC", "KZN", 95);
     Ticket item6 = new Ticket(6, 14000, "LED", "KZN", 110);
-    Ticket item7= new Ticket(7, 11000, "LED", "KZN", 111);
+    Ticket item7 = new Ticket(7, 11000, "LED", "KZN", 111);
 
     @BeforeEach
     public void Setup() {
@@ -25,14 +25,15 @@ public class TicketManagerTest {
         manager.addNew(item7);
     }
 
-@Test
-public void testFindAllManager1() {
+    @Test
+    public void testFindAllManager1() {
 
-    Ticket[] expected = {item7, item6, item3};
-    Ticket[] actual = manager.findAllManager("LED", "KZN");
+        Ticket[] expected = {item7, item6, item3};
+        Ticket[] actual = manager.findAllManager("LED", "KZN");
 
-    Assertions.assertArrayEquals(expected, actual);
-}
+        Assertions.assertArrayEquals(expected, actual);
+    }
+
     @Test
     public void testFindAllManager2() {
 
